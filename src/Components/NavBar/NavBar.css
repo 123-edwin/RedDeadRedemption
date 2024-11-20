@@ -1,0 +1,45 @@
+
+.NavBar {
+    position: fixed; /* Fija la barra en la parte superior de la página */
+    top: 0; /* Mantiene el navbar en la parte superior */
+    left: 0;
+    width: 100%; /* Asegura que abarque todo el ancho de la ventana */
+    background-color: #000000; /* Color de fondo oscuro */
+    color: white; /* Texto blanco para contraste */
+    display: flex; /* Para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Espaciado entre el logo, título y botón */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 10px 20px; /* Espaciado interno */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añade una sombra para destacar */
+  }
+  
+  /* Estilo para el logo o imagen */
+  .NavIcon {
+    height: 50px;
+  }
+  
+  /* Estilo para el título */
+  .Title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Botón para abrir el modal */
+  .OpenModal {
+    background-color: #ff4500; /* Naranja brillante para destacar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover en el botón */
+  .OpenModal:hover {
+    background-color: #e03d00; /* Oscurece el botón al pasar el cursor */
+  }
+  
