@@ -1,21 +1,38 @@
 // Modal.jsx
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import './Modal.css';  // Asegúrate de que el CSS esté importado
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import "./Modal.css"; // Asegúrate de que el CSS esté importado
 
 export function Modal({ isOpen, closeModal }) {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí puedes manejar el envío del formulario
-    console.log('Nombre:', name);
-    console.log('Correo Electrónico:', email);
-    closeModal();  // Cierra el modal después de enviar el formulario
+    console.log("Nombre:", name);
+    console.log("Correo Electrónico:", email);
+    closeModal(); // Cierra el modal después de enviar el formulario
   };
 
-  if (!isOpen) return null;  // Si el modal no está abierto, no renderiza nada
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        closeModal(); // Cierra el modal si se presiona Escape
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    // Limpieza: eliminar el listener cuando el modal se cierre o el componente se desmonte
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen, closeModal]);
+
+  if (!isOpen) return null; // Si el modal no está abierto, no renderiza nada
 
   return (
     <div className="modal">
@@ -46,7 +63,9 @@ export function Modal({ isOpen, closeModal }) {
           </div>
           <div className="form-actions">
             <button type="submit">Enviar</button>
-            <button type="button" onClick={closeModal}>Cerrar</button>
+            <button type="button" onClick={closeModal}>
+              Cerrar
+            </button>
           </div>
         </form>
       </div>
@@ -56,6 +75,6 @@ export function Modal({ isOpen, closeModal }) {
 
 //Validación de props
 Modal.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    closeModal: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  closeModal: PropTypes.func.isRequired,
 };

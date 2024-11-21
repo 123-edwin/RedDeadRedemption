@@ -16,8 +16,8 @@ export function NavBar() {
     <>
       <header>
         <nav className="NavBar">
-          <img className="NavIcon" src="/Header.png"></img>
-          <h1 className="Title">RDR Fan</h1>
+          <img className="NavIcon" src="/Header.png" alt="Imágen Decorativa"></img>
+          <h1 className="Title">RDR FAN</h1>
           <button className="OpenModal" onClick={openModal}>Abrir Modal</button>
 
           {/* Modal componente que recibe las props isOpen y closeModal */}
