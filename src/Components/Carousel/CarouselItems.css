@@ -1,0 +1,21 @@
+.carousel-item-content {
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 60%;
+    max-height: 40%;
+    object-fit: contain;
+    image-rendering: auto;
+  }
+  
+  .carousel-text {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+  }
+  
