@@ -37,10 +37,7 @@ button {
 }
 
 /* Evitar bordes en campos de formulario */
-input, textarea, select, button {
-    outline: none;
-    border: none;
-}
+
 
 /* Asegura que los campos de formulario se vean consistentes */
 input, textarea, select {

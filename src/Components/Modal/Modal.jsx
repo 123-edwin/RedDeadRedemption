@@ -40,7 +40,7 @@ export function Modal({ isOpen, closeModal }) {
       aria-describedby="modal-description"
     >
       <div className="modal-content">
-        <h2 id="modal-title">Formulario</h2>
+        <h2 className="modal-title">Formulario</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Nombre:</label>

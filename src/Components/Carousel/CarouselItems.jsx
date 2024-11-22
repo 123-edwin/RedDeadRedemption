@@ -7,7 +7,7 @@ export function CarouselItems({ image, title, description }) {
     <div className="carousel-item-content">
       <img src={image} alt={title} className="carousel-image" />
       <div className="carousel-text">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </div>

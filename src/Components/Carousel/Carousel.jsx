@@ -19,7 +19,7 @@ export function Carousel({ children }) {
 
   return (
     <div className="carousel">
-      <button className="carousel-btn prev" onClick={handlePrev}>
+      <button className="carousel-btn prev" aria-label="Anterior" onClick={handlePrev}>
         ◀
       </button>
       <div className="carousel-content">
@@ -33,7 +33,7 @@ export function Carousel({ children }) {
           </div>
         ))}
       </div>
-      <button className="carousel-btn next" onClick={handleNext}>
+      <button className="carousel-btn next" aria-label="Siguiente" onClick={handleNext}>
         ▶
       </button>
     </div>
