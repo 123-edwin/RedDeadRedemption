@@ -4,6 +4,7 @@
     margin: auto;
     overflow: hidden;
     margin-top: 6%;
+    min-height: 30rem;
   }
   
   .carousel-content {
