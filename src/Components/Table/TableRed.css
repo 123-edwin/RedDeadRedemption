@@ -1,0 +1,37 @@
+.table-container {
+    margin: 20px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .red-dead-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+  
+  .red-dead-table th,
+  .red-dead-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .red-dead-table th {
+    background-color:  #832612;
+    color: rgb(255, 255, 255);
+  }
+  
+  .red-dead-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .red-dead-table tr:hover {
+    background-color: #B32D00; /* Naranja quemado */
+    color: #FFFFFF; /* Mantiene el texto blanco */
+  }
+  
+  .red-dead-table td {
+    text-align: center;
+  }
+  

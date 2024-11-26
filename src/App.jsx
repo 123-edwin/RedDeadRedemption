@@ -1,6 +1,11 @@
 import { NavBar } from "./Components/NavBar/NavBar";
 import { Carousel } from "./Components/Carousel/Carousel";
 import { CarouselItems } from "./Components/Carousel/CarouselItems";
+import { TableRed } from "./Components/Table/TableRed.jsx";
+import {StoryAndNarrative} from "./Components/Paragraphs/StoryandNarrative.jsx";
+import { GameplayMechanics } from "./Components/Paragraphs/GameplayMechanics.jsx";
+import { WorldDesign } from "./Components/Paragraphs/WorldDesign.jsx";
+import { CulturalImpact } from "./Components/Paragraphs/CulturalImpact.jsx";
 import "./App.css";
 
 function App() {
@@ -29,7 +34,13 @@ const news = [
             description={item.description}
           />
         ))}
-      </Carousel>
+    </Carousel>
+    <TableRed />
+    <StoryAndNarrative />
+    <GameplayMechanics />
+    <WorldDesign />
+    <CulturalImpact />
+    
     </>
   );
 }

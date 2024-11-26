@@ -16,7 +16,7 @@ export function NavBar() {
     <>
       <header>
         <nav className="NavBar">
-          <img className="NavIcon" src="/Header.png" alt="Imágen Decorativa"></img>
+          <img className="NavIcon" src="https://cdn2.steamgriddb.com/logo/9d5ec17d0e985f11571508f9f7734bcb.png" alt="Imágen Decorativa"></img>
           <h1 className="Title">RDR FAN</h1>
           <button className="OpenModal" onClick={openModal}>Abrir Modal</button>
 
