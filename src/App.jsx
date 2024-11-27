@@ -2,45 +2,65 @@ import { NavBar } from "./Components/NavBar/NavBar";
 import { Carousel } from "./Components/Carousel/Carousel";
 import { CarouselItems } from "./Components/Carousel/CarouselItems";
 import { TableRed } from "./Components/Table/TableRed.jsx";
-import {StoryAndNarrative} from "./Components/Paragraphs/StoryandNarrative.jsx";
+import { StoryAndNarrative } from "./Components/Paragraphs/StoryandNarrative.jsx";
 import { GameplayMechanics } from "./Components/Paragraphs/GameplayMechanics.jsx";
 import { WorldDesign } from "./Components/Paragraphs/WorldDesign.jsx";
 import { CulturalImpact } from "./Components/Paragraphs/CulturalImpact.jsx";
 import "./App.css";
 
 function App() {
-const news = [
-  {
-    image: 'https://sm.ign.com/t/ign_es/news/r/red-dead-r/red-dead-redemption-pc-port-may-finally-be-coming-datamine-s_1vkg.1024.jpg',
-    title: 'Nueva expansión de Red Dead Redemption',
-    description: 'Explora nuevos territorios en esta actualización.',
-  },
-  {
-    image: 'https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2018%2F10%2F31135807%2FRed-Dead-Redemption-2-1.jpg?auth=b834aed399388ef187901fb886cdb28fa4cca9303bfc58e6e98d747239afc629&smart=true&width=1024&height=512&quality=85',
-    title: 'Actualización de Cyberpunk 2077',
-    description: 'Corrige errores y mejora la experiencia de juego.',
-  },
-];
+  const news = [
+    {
+      image: "https://i.blogs.es/d769bf/red-dead-redemption-2/1200_800.webp",
+      alternative: "Arthur Morgan disparando un arma",
+      title: "Red Dead Redemption 2: requisitos mínimos y recomendados para PC",
+      description:
+        "La aventura de Arthur Morgan no es especialmente demandante para jugar en Full HD, pero a 4K es otra historia.",
+    },
+    {
+      image:
+        "https://thisgengaming.com/wp-content/uploads/2023/08/Red-Dead-Redemption.jpg",
+      alternative: "Portada de Red Dead Redemption de John Marston",
+      title:
+        "Red Dead Redemption y Undead Nightmare llegarán a PC el 29 de octubre",
+      description:
+        "Por primera vez en su histórico legado, el viaje de John Marston podrá disfrutarse en PC con todo lujo de detalles",
+    },
+  ];
 
   return (
     <>
-    <NavBar />
-    <Carousel>
+      <NavBar />
+
+      <Carousel>
         {news.map((item, index) => (
           <CarouselItems
             key={index}
             image={item.image}
             title={item.title}
             description={item.description}
+            alternative={item.alternative}
           />
         ))}
-    </Carousel>
-    <TableRed />
-    <StoryAndNarrative />
-    <GameplayMechanics />
-    <WorldDesign />
-    <CulturalImpact />
-    
+      </Carousel>
+      <TableRed />
+      <StoryAndNarrative />
+      <GameplayMechanics />
+      <WorldDesign />
+      <CulturalImpact />
+      <div className="youtube-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ksUe40EyKL8?si=e1yDUJmgmfIriFBm"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        
+      </div>
     </>
   );
 }

@@ -16,7 +16,7 @@ html, body {
 /* Asegura que los enlaces no tengan subrayado y sus colores sean los predeterminados */
 a {
     text-decoration: none;
-    color: inherit;
+    color: rgb(33, 33, 146);
 }
 
 /* Listas */
