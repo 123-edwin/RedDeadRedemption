@@ -3,8 +3,8 @@ export function CulturalImpact() {
     <div className="Text">
       <h3>Impacto cultural y recepción</h3>
       <p>
-        <strong>Red Dead Redemption (2010):</strong> El impacto de *Red Dead
-        Redemption* en la industria de los videojuegos fue inmediato y profundo.
+        <strong>Red Dead Redemption (2010):</strong> El impacto de Red Dead
+        Redemption en la industria de los videojuegos fue inmediato y profundo.
         El juego recibió numerosos premios y reconocimientos, particularmente
         por su narrativa y diseño. Fue aclamado por su profunda historia, que
         combinaba temas de redención, familia y sacrificio, y por su mundo
@@ -16,22 +16,22 @@ export function CulturalImpact() {
         complejos.
       </p>
       <p>
-        <strong>Undead Nightmare:</strong> Aunque *Undead Nightmare* fue
-        originalmente un DLC para *Red Dead Redemption*, fue ampliamente
+        <strong>Undead Nightmare:</strong> Aunque Undead Nightmare fue
+        originalmente un DLC para Red Dead Redemption, fue ampliamente
         aceptado como un contenido innovador y divertido que ofrecía una
         interpretación única del mundo del juego. A través de su giro
-        sobrenatural, con zombis y criaturas mitológicas, *Undead Nightmare*
+        sobrenatural, con zombis y criaturas mitológicas, Undead Nightmare
         brindó una experiencia fresca y divertida en un formato que aún mantenía
         la esencia del juego base. Su popularidad y originalidad lo convirtieron
         en uno de los DLC más recordados de la época.
       </p>
       <p>
-        <strong>Red Dead Redemption 2:</strong> La secuela de *Red Dead
-        Redemption* se consolidó rápidamente como una de las obras maestras de
+        <strong>Red Dead Redemption 2:</strong> La secuela de Red Dead
+        Redemption se consolidó rápidamente como una de las obras maestras de
         Rockstar Games. Su éxito no solo se midió en términos de ventas, sino
         también en la crítica universalmente positiva que recibió por su
         detallado mundo abierto, su profunda narrativa y la complejidad de sus
-        personajes. *Red Dead Redemption 2* se convirtió en un referente para
+        personajes. Red Dead Redemption 2 se convirtió en un referente para
         los videojuegos de mundo abierto, y su impacto cultural fue
         significativo, ya que ofreció una experiencia profundamente inmersiva
         que conectó emocionalmente con los jugadores. La historia de Arthur
@@ -44,15 +44,15 @@ export function CulturalImpact() {
       <div className="Links">
       <a
         href="https://store.rockstargames.com/es-419/game/buy-red-dead-redemption"
-        title="Visita la página de rockstar para comprar Red Dead Redemption"
+        aria-label="Comprar Red Dead Redemption"
       >
-        Compra Red Dead Redemption
+        Comprar Red Dead Redemption
       </a>
       <a
         href="https://store.rockstargames.com/es-419/game/buy-red-dead-redemption-2"
-        title="Visita la página de rockstar para comprar Red Dead Redemption 2"
+        aria-label="Comprar Red Dead Redemption 2"
       >
-        Compra Red Dead Redemption 2
+        Comprar Red Dead Redemption 2
       </a>
       </div> 
     </div>
