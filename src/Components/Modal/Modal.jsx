@@ -65,7 +65,7 @@ export function Modal({ isOpen, closeModal }) {
     >
       <div className="modal-content">
         <h2 className="modal-title" id="modal-title">
-          Formulario
+          Subscribete
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
